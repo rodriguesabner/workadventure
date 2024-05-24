@@ -38,7 +38,7 @@ export const getYoutubeEmbedUrl = async (url: URL): Promise<string> => {
             if (html == undefined) throw new Error("No html found");
             return getUrlFromHtml(html);
         })
-        .catch((err) => {
+        .catch(() => {
             throw new YoutubeException();
         });
 };

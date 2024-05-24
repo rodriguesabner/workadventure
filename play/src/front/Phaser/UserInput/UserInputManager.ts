@@ -112,16 +112,13 @@ export class UserInputManager {
     initKeyBoardEvent() {
         this.keysCode = [
             {
+                //TODO: create dancing moves
                 event: UserInputEvent.MoveUp,
                 keyInstance: this.scene.input.keyboard?.addKey(Phaser.Input.Keyboard.KeyCodes.Z, false),
             },
             {
                 event: UserInputEvent.MoveUp,
                 keyInstance: this.scene.input.keyboard?.addKey(Phaser.Input.Keyboard.KeyCodes.W, false),
-            },
-            {
-                event: UserInputEvent.MoveLeft,
-                keyInstance: this.scene.input.keyboard?.addKey(Phaser.Input.Keyboard.KeyCodes.Q, false),
             },
             {
                 event: UserInputEvent.MoveLeft,
